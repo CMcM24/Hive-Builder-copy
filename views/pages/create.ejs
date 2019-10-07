@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head.ejs %>
+<title>Create Event</title>
+
+<body>
+
+    <% include ../partials/header.ejs %>
+
+    <div class="fixBlock">
+        <h1 id="headerFont"> Now let's make some buzz !!</h1>
+        <form>
+            <div class="form-group" id="eventTitle_form">
+                <label for="event-title">Title</label>
+                <input type="text" class="form-control" id="event-title" aria-describedby="emailHelp"
+                    placeholder="Make a cool name for your event!">
+            </div>
+
+            <div class="form-group" id="eventTime_form">
+                <label for="event-time">Time:</label>
+                <input type="text" class="form-control" id="event-time" aria-describedby="emailHelp"
+                    placeholder="What time will the event be held?">
+            </div>
+
+            <div class="form-group" id="eventLocation_form">
+                <label for="event-location">Location:</label>
+                <input type="text" class="form-control" id="event-location" aria-describedby="emailHelp"
+                    placeholder="Address">
+            </div>
+
+            <div class="form-group">
+                <label for="event-desc">Description:</label>
+                <textarea class="form-control" id="event-desc" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="event-category">Category:</label>
+                <select class="form-control" id="event-category">
+                    <option>Volunteer</option>
+                    <option>Education</option>
+                    <option>Charity</option>
+                    <option>Party</option>
+                    <option>Sports</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="event-date">Date:</label>
+                <input type="text" class="form-control" id="event-date" aria-describedby="emailHelp"
+                    placeholder="mm/dd/yyyy">
+            </div>
+
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

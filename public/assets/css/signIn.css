@@ -1,0 +1,62 @@
+
+
+
+#usernameLogform {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.alignGridWrapper {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
+  justify-self: center; 
+}
+
+#usernameLogform::before {
+    content: "";
+    background-color: #1B84A7;;
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 5px;
+}
+
+#logInBtn {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10;
+    padding-left: 25px;
+    padding-right: 25px;
+
+} 
+
+.name {
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+label {
+    margin-top: 20px;
+    margin-bottom: 5px; 
+    font-size: 1.2rem;
+}
+
+.stickyFooter {
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    z-index: inherit;
+}

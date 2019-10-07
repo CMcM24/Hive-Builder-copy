@@ -1,0 +1,31 @@
+
+<html lang="en-US">
+
+<head>
+  <% include ../partials/head.ejs %>
+  <title>Login</title>
+</head>
+
+<body>
+
+  <% include ../partials/header.ejs %>
+  <div>
+    <form id="usernameLogForm" action="get">
+      <div class="alignGridWrapper">
+        <div>
+          <label for="usernameLog">Username</label>
+          <input type="text" class="name" id="usernameLog" aria-describedby="emailHelp" placeholder="Username">
+        </div>
+        <div id="passLogForm">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" autocomplete="password" id="passLog" placeholder="Password">
+        </div>
+        <div class="center">
+          <button type="submit" id="logInBtn">Submit <i class="fab fa-forumbee"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>

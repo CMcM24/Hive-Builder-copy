@@ -1,0 +1,70 @@
+/* footer */
+
+.copyright {
+    text-align: center;
+    color: lightgrey;
+    padding: 5px;
+    
+}
+
+.footerLinks {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#textColor {
+    color: lightgrey;
+}
+
+/* body */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: .85rem;
+    color: #140c07;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #166C89;
+}
+
+/* NAV */
+
+#logo {
+    font-size: 1.75rem;
+    margin-right: 5px;
+    color: #EFBF2D !important;
+    text-decoration: none;
+}
+
+#logoLink {
+    font-size: 1.75rem;
+    color: #EFBF2D !important;
+    text-decoration: none;
+}
+
+li {
+    padding: 10;
+}
+
+.navbar {
+    display: flex;
+    box-shadow: 0px 1px 5px #3891A6; 
+    background-color: white;
+}
+
+.push {
+    margin-left: auto;
+    display: inline;
+}
+
+.navText {
+    color: #140c07;
+}
+
+#membersPage {
+    background-image: url("/images/modal/goodmodal.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

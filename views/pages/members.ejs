@@ -1,0 +1,35 @@
+<!-- views/pages/about.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/head %>
+</head>
+
+<body class="container" id="membersPage">
+  <% include ../partials/header.ejs %>
+  <main>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2>Welcome, <span class="member-name"></span>!</h2>
+      </div>
+      <div class="row justify-content-center">
+        <h3 class="nextStep"> Let's make some buzz...</h3>
+      </div>
+      
+      <div class="welcome-body">
+        <!-- <img src="/images/modal/goodmodal.gif" alt="happy bees"> -->
+      </div>
+    </div>
+    
+         <h2>Your Events</h2>
+            <br>
+            <div class="card-columns" id="your_events"></div>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

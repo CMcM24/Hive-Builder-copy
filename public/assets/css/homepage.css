@@ -1,0 +1,65 @@
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+};
+
+#sectionOne{
+  position:absolute;
+  height: auto;
+}
+
+#beegif {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 10px;
+  right: 50px;
+
+}
+.card-img-top{
+  height: 50px;
+}
+
+#harold{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* .writing{
+    top: 60px;
+    left: 100px;
+} */
+
+#icons {
+  text-align: center;
+}
+.sectionThree{
+  height: auto;
+}
+#fakelogos{
+  height: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #sectionOne {
+    height: 600px;
+    background-color: #130C07;
+  }   
+  #banner{
+    display:none;
+  }
+  #beegif {
+    position: absolute;
+    top: 300px;
+    bottom: 4px;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+  }
+}
