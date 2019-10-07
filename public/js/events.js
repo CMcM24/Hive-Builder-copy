@@ -2,14 +2,13 @@ $(document).ready(function () {
     // This file just does a GET request to figure out which user is logged in
     // and updates the HTML on the page. 
     
-    //It is also where the values from the event creation are grabbed and sent off via ajax calls. It also has some code that will eventually handle updating the values in the events, should there have been a change of date, description, time, etc.
     
     $.get("/api/user_data").then(function (data) {
         userdata = data;
         return userdata;
     });
 
-
+//ajax call for sending the new event to the database.
     function createEvent(theEvent) {
         $.post("/api/events", theEvent).then(function() {
             alert("Event Created!");
@@ -18,7 +17,7 @@ $(document).ready(function () {
           });
         }
 
-
+ //Here is some code that will eventually handle updating the values in the events, should there have been a change of date, description, time, etc.
     function updateEvent(theEvent) {
         $.ajax({
             method: "PUT",
@@ -29,6 +28,9 @@ $(document).ready(function () {
             location.reload();
         });
     };
+
+
+//The jQuery grabs of the data to be submitted/updated.
 
     $("#submit").on("click", function (event) {
       
